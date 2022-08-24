@@ -60,12 +60,12 @@ values['top500_direct'] = getRulesStringFromFile('resultant/top500_direct.list',
 
 values['ad'] = getRulesStringFromFile('resultant/ad.list', 'Reject')
 
-values['manual_direct'] = getRulesStringFromFile('manual_direct.txt', 'Direct')
-values['manual_proxy']  = getRulesStringFromFile('manual_proxy.txt', 'Proxy')
-values['manual_reject'] = getRulesStringFromFile('manual_reject.txt', 'Reject')
+values['manual_direct'] = getRulesStringFromFile('manual/manual_direct.txt', 'Direct')
+values['manual_proxy']  = getRulesStringFromFile('manual/manual_proxy.txt', 'Proxy')
+values['manual_reject'] = getRulesStringFromFile('manual/manual_reject.txt', 'Reject')
 
 values['gfwlist'] = getRulesStringFromFile('resultant/gfw.list', 'Proxy') \
-                  + getRulesStringFromFile('manual_gfwlist.txt', 'Proxy')
+                  + getRulesStringFromFile('manual/manual_gfwlist.txt', 'Proxy')
 
 
 # make confs

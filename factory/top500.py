@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Chinaz的top500收费了，因此暂时不能使用
+# 但会保留factory/resultant/top500_direct.list文件来使用
 
 from bs4 import BeautifulSoup
 import threading
