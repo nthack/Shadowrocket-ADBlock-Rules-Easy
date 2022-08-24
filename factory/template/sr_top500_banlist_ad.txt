@@ -1,0 +1,14 @@
+#
+# 黑名单中包含了 GFWList 中定义的无法访问的网站，剩下的网站直连。
+# 包含广告过滤manual_reject、ad
+#
+
+
+{{manual_reject}}
+{{ad}}
+{{manual_proxy}}
+{{gfwlist}}
+{{top500_direct}}
+{{manual_direct}}
+
+FINAL,direct

@@ -1,0 +1,26 @@
+# 手工定义的 Direct 列表
+
+#阿里云
+aliyun.com
+taobao.com
+alicdn.com
+mmstat.com
+
+#优酷
+youku.com
+
+#153
+icloud-content.com
+api.cloudmobi.net
+
+
+#学术网站
+researchgate.net
+springer.com
+blackwell-synergy.com
+sciencemag.org
+jstor.org
+cabdirect.org
+ieee.org
+nature.com
+osapublishing.org
