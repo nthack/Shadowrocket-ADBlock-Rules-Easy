@@ -8,7 +8,9 @@ import time
 # except sr_head and sr_foot
 confs_names = [
     'sr_banlist',
-    'sr_banlist_ad'
+    'sr_banlist_manual',
+    'sr_banlist_ad',
+    'sr_banlist_ad_manual'
 ]
 
 
@@ -63,6 +65,8 @@ values['gfwlist'] = getRulesStringFromFile('resultant/gfw.list', 'Proxy') \
 
 # make confs
 for conf_name in confs_names:
+    print('正在构建ShadowRocket列表：', conf_name)
+
     file_template = open('template/'+conf_name+'.txt', 'r', encoding='utf-8')
     template = file_template.read()
 
@@ -77,6 +81,9 @@ for conf_name in confs_names:
 
 
     for mark in marks:
+        print('包含内容：', mark)
         template = template.replace('{{'+mark+'}}', values[mark])
 
     file_output.write(template)
+
+    print('ShadowRocket列表：', conf_name,' 构建完成\n')

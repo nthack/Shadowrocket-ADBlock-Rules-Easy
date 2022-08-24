@@ -4,9 +4,9 @@
 #
 
 
-{{manual_proxy}}
+
+
 {{gfwlist}}
 {{top500_direct}}
-{{manual_direct}}
 
 FINAL,direct
