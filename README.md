@@ -8,21 +8,22 @@
 
 ### 二、规则列表
 #### 2.1 列表概述
+
 <table>
     <tr>
         <th>规则简称</th><th>广告</th><th>规则文件名</th><th>代理的网站</th><th>直连的网站</th>
     </tr>
     <tr>
-        <td rowspan="2">黑名单</td><td>去</td><td>sr_banlist_ad.conf</td><td rowspan="2">被墙的网站（GFWList）</td><td rowspan="2">1. 已知直连列表<br>2. 正常的网站</td>
+        <td rowspan="2">黑名单</td><td>-</td><td>sr_banlist.conf</td><td rowspan="2">被墙的网站（GFWList）</td><td rowspan="2">1. 已知直连列表<br>2. 正常的网站</td>
     </tr>
     <tr>
-        <td>-</td><td>sr_banlist.conf</td>
+        <td>去广告</td><td>sr_banlist_ad.conf</td>
     </tr>
     <tr>
-        <td rowspan="2">黑名单+自定义列表</td><td>去</td><td>sr_banlist_custom_ad.conf</td><td rowspan="2">1. 被墙的网站（GFWList）<br>2. 自定义走代理的列表</td><td rowspan="2">1. 已知直连列表<br>2. 正常的网站<br>3. 自定义直连列表</td>
+        <td rowspan="2">黑名单+自定义列表</td><td>-</td><td>sr_banlist_custom.conf</td><td rowspan="2">1. 被墙的网站（GFWList）<br>2. 自定义走代理的列表</td><td rowspan="2">1. 已知直连列表<br>2. 正常的网站<br>3. 自定义直连列表</td>
     </tr>
     <tr>
-        <td>-</td><td>sr_banlist_custom.conf</td>
+        <td>去广告</td><td>sr_banlist_custom_ad.conf</td>
     </tr>
 </table>
 
