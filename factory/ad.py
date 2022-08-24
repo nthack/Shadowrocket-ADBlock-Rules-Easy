@@ -35,6 +35,8 @@ for rule_url in rules_url:
     try_times = 0
     r = None
     while try_times < 5 and not success:
+        print('尝试获取次数：', try_times+1)
+
         r = requests.get(rule_url)
         if r.status_code != 200:
             time.sleep(1)
@@ -44,7 +46,7 @@ for rule_url in rules_url:
             break
 
     if not success:
-        sys.exit('error in request %s\n\treturn code: %d' % (rule_url, r.status_code) )
+        sys.exit('获取广告列表失败： %s\n\t return code: %d' % (rule_url, r.status_code) )
 
     rule = rule + r.text + '\n'
 
@@ -107,7 +109,7 @@ try:
 except:
     pass
 
-file_ad.write('# adblock rules refresh time: ' + time.strftime("%Y-%m-%d %H:%M:%S") + '\n')
+file_ad.write('# adblock 规则最新刷新时间: ' + time.strftime("%Y-%m-%d %H:%M:%S") + '\n')
 
 domains = list( set(domains) )
 domains.sort()

@@ -4,18 +4,11 @@ import re
 import time
 
 
-# confs names in template/ and ../
+# 在 template/ 和 ../ 下的文件名称
 # except sr_head and sr_foot
 confs_names = [
-    'sr_top500_banlist_ad',
-    'sr_top500_banlist',
-    'sr_top500_whitelist_ad',
-    'sr_top500_whitelist',
-    'sr_adb',
-    'sr_direct_banad',
-    'sr_proxy_banad',
-    'sr_cnip', 'sr_cnip_ad',
-    'sr_backcn', 'sr_backcn_ad'
+    'sr_banlist',
+    'sr_banlist_ad'
 ]
 
 
@@ -50,7 +43,7 @@ str_head = open('template/sr_head.txt', 'r', encoding='utf-8').read()
 str_foot = open('template/sr_foot.txt', 'r', encoding='utf-8').read()
 
 
-# make values
+# make values marks
 values = {}
 
 values['build_time'] = time.strftime("%Y-%m-%d %H:%M:%S")
@@ -77,7 +70,11 @@ for conf_name in confs_names:
 
     file_output = open('../'+conf_name+'.conf', 'w', encoding='utf-8')
 
+
+    # marks：在模板文件里面定义的"{{xxx}}"，但是也要和上面values定义的对应上
+    # 与文件名称无关
     marks = re.findall(r'{{(.+)}}', template)
+
 
     for mark in marks:
         template = template.replace('{{'+mark+'}}', values[mark])
