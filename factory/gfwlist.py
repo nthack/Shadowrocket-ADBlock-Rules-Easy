@@ -17,12 +17,16 @@ rules_url = 'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.tx
 unhandle_rules = []
 
 
+# 获取GFWList并解析
 def get_rule(rules_url):
+
     print('正在加载列表：' + rules_url)
+
     success = False
     try_times = 0
     r = None
     while try_times < 5 and not success:
+
         print('尝试次数: ', try_times+1)
 
         r = requests.get(rules_url)
@@ -35,9 +39,11 @@ def get_rule(rules_url):
             break
 
     if not success:
-        raise Exception('error in request %s\n\treturn code: %d' % (rules_url, r.status_code) )
+        raise Exception('请求失败： %s\n\t 返回HTTP代码为: %d' % (rules_url, r.status_code) )
 
-    print('成功获取列表，正在转换...')
+
+    print('成功获取GFWList列表，正在转换...')
+
     time.sleep(1)
     rule = base64.b64decode(r.text) \
             .decode("utf-8") \
@@ -68,6 +74,8 @@ def clear_format(rule):
         print('find rule: ', row)
 
         rules.append(row)
+
+    print('解析GFWList完毕,共找到规则条数：', rules.count)
 
     return rules
 
