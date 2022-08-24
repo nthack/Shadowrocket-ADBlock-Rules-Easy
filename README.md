@@ -20,10 +20,10 @@
         <td>去</td><td>sr_banlist_ad.conf</td>
     </tr>
     <tr>
-        <td rowspan="2">黑名单+自定义列表</td><td>-</td><td>sr_banlist_custom.conf</td><td rowspan="2">1. 被墙的网站（GFWList）<br>2. 自定义走代理的列表</td><td rowspan="2">1. 已知直连列表<br>2. 正常的网站<br>3. 自定义直连列表</td>
+        <td rowspan="2">黑名单+自定义列表</td><td>-</td><td>sr_banlist_manual.conf</td><td rowspan="2">1. 被墙的网站（GFWList）<br>2. 自定义走代理的列表</td><td rowspan="2">1. 已知直连列表<br>2. 正常的网站<br>3. 自定义直连列表</td>
     </tr>
     <tr>
-        <td>去</td><td>sr_banlist_custom_ad.conf</td>
+        <td>去</td><td>sr_banlist_ad_manual.conf</td>
     </tr>
 </table>
 
