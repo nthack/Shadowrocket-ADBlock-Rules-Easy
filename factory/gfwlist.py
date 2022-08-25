@@ -71,11 +71,11 @@ def clear_format(rule):
         # 清除后缀
         row = row.rstrip('/^*')
 
-        print('find rule: ', row)
+        # print('find rule: ', row)
 
         rules.append(row)
 
-    print('解析GFWList完毕,共找到规则条数：', rules.count)
+    print('解析GFWList完毕,共找到规则条数：', len(rules))
 
     return rules
 
