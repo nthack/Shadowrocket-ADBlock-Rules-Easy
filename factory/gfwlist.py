@@ -19,30 +19,33 @@ unhandle_rules = []
 
 # 获取GFWList并解析
 def get_rule(rules_url):
-
-    print('正在加载列表：' + rules_url)
+    print('正在加载从URL加载GFWList列表：')
+    print('URL：%s' % rules_url)
+    
 
     success = False
     try_times = 0
     r = None
     while try_times < 5 and not success:
 
-        print('尝试次数: ', try_times+1)
+        print('第%d次发送获取请求...' % (try_times + 1))
 
         r = requests.get(rules_url)
 
         if r.status_code != 200:
+            print('获取列表失败！正在重试...')
             time.sleep(1)
             try_times = try_times + 1
         else:
+            print('获取列表成功！\n')
             success = True
             break
 
     if not success:
-        raise Exception('请求失败： %s\n\t 返回HTTP代码为: %d' % (rules_url, r.status_code) )
+        raise Exception('GFWList请求失败： %s\n\t 返回HTTP代码为: %d' % (rules_url, r.status_code) )
 
 
-    print('成功获取GFWList列表，正在转换...')
+    print('成功获取GFWList列表，正在解析...\n')
 
     time.sleep(1)
     rule = base64.b64decode(r.text) \
@@ -75,8 +78,6 @@ def clear_format(rule):
 
         rules.append(row)
 
-    print('解析GFWList完毕,共找到规则条数：', len(rules))
-
     return rules
 
 
@@ -100,12 +101,14 @@ def filtrate_rules(rules):
     ret = list( set(ret) )
     ret.sort()
 
+    print('解析GFWList完毕,共找到%d条记录，正在写文件...' % len(ret))
+
     return ret
 
 
 
 # main
-
+print('=============================================================')
 rule = get_rule(rules_url)
 
 rules = clear_format(rule)
@@ -117,3 +120,6 @@ open('resultant/gfw.list', 'w', encoding='utf-8') \
 
 open('resultant/gfw_unhandle.log', 'w', encoding='utf-8') \
     .write('\n'.join(unhandle_rules))
+
+print('共%d条GFWList规则写入文件完成！！\n' % len(rules))
+print('=============================================================\n\n\n')

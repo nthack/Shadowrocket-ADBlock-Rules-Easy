@@ -27,21 +27,26 @@ rule = ''
 domains = []
 
 
+print('=============================================================')
+
 for rule_url in rules_url:
-    print('loading... ' + rule_url)
+    print('正在加载ADBlock列表：')
+    print('URL：%s' % rule_url)
 
     # get rule text
     success = False
     try_times = 0
     r = None
     while try_times < 5 and not success:
-        print('尝试获取次数：', try_times+1)
+        print('第%d次发送获取请求...' % (try_times + 1))
 
         r = requests.get(rule_url)
         if r.status_code != 200:
+            print('获取列表失败！正在重试...')
             time.sleep(1)
             try_times = try_times + 1
         else:
+            print('获取列表成功！\n')
             success = True
             break
 
@@ -49,9 +54,11 @@ for rule_url in rules_url:
         sys.exit('获取广告列表失败： %s\n\t return code: %d' % (rule_url, r.status_code) )
 
     rule = rule + r.text + '\n'
+    
 
 
 # parse rule
+print('开始转换规则....')
 rule = rule.split('\n')
 for row in rule:
     row = row.strip()
@@ -95,7 +102,8 @@ for row in rule:
     if re.match(r'^([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,9}$', row) or re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', row):
         domains.append(row)
 
-print('done.')
+print('规则转换成功，正在写文件....')
+
 
 
 # write into files
@@ -116,3 +124,6 @@ domains.sort()
 
 for item in domains:
     file_ad.write(item + '\n')
+
+print('共%d条ADBlock规则写入文件完成！！\n' % len(domains))
+print('=============================================================\n\n\n')
