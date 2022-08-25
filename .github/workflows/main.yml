@@ -6,8 +6,9 @@ name: Auto-Update
 on:
   schedule:
     # 每8小时更新一次
-    - cron:  '*/5 * * * *'
+    - cron:  '0 */8 * * *'
   
+  workflow_dispatch:
   
   push:
     branches:
