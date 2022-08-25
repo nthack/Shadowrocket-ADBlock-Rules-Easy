@@ -1,0 +1,31 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  schedule:
+    # 每日8时开始
+    - cron:  '0 23 * * *'
+  
+  push:
+    branches:
+    - master
+    paths-ignore: 
+      - 'README.md'
+      - 'LICENSE'
+
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Install requirements
+        run: pip3 install -r requirements.txt
+
+      - name: Run auto-build.sh
+        run: ./factory/auto_build.sh
