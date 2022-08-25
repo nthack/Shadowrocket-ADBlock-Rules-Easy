@@ -30,3 +30,9 @@ jobs:
 
       - name: Run auto-build.sh
         run: ./factory/auto_build.sh
+
+      
+      # Use auto add and commit
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Apply php-cs-fixer changes
