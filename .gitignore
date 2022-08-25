@@ -1,2 +1,4 @@
 /.idea
 test.py
+*.pyc
+*.pyo

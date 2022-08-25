@@ -10,6 +10,7 @@ import time
 import sys
 import requests
 import re
+import PropFileRW
 
 
 rules_url = [
@@ -125,5 +126,9 @@ domains.sort()
 for item in domains:
     file_ad.write(item + '\n')
 
-print('共%d条ADBlock规则写入文件完成！！\n' % len(domains))
+
+adBlockListLength = len(domains).__str__()
+PropFileRW.setProp('adBlockListLength', adBlockListLength)
+
+print('共%s条ADBlock规则写入文件完成！！\n' % adBlockListLength)
 print('=============================================================\n\n\n')

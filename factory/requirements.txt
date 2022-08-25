@@ -1,4 +1,4 @@
 beautifulsoup4
 requests
 lxml
-jproperties
+configparser

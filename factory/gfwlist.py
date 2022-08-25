@@ -10,6 +10,7 @@ import time
 import requests
 import re
 import base64
+import PropFileRW
 
 
 rules_url = 'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
@@ -101,6 +102,7 @@ def filtrate_rules(rules):
     ret = list( set(ret) )
     ret.sort()
 
+
     print('解析GFWList完毕,共找到%d条记录，正在写文件...' % len(ret))
 
     return ret
@@ -121,5 +123,11 @@ open('resultant/gfw.list', 'w', encoding='utf-8') \
 open('resultant/gfw_unhandle.log', 'w', encoding='utf-8') \
     .write('\n'.join(unhandle_rules))
 
-print('共%d条GFWList规则写入文件完成！！\n' % len(rules))
+
+# 写入数据
+gfwListLength = len(rules).__str__()
+
+PropFileRW.setProp('gfwListLength', gfwListLength)
+
+print('共%s条GFWList规则写入文件完成！！\n' % gfwListLength)
 print('=============================================================\n\n\n')
