@@ -8,12 +8,13 @@ on:
     # 每日8时开始
     - cron:  '0 23 * * *'
   
-  push:
-    branches:
-    - master
-    paths-ignore: 
-      - 'README.md'
-      - 'LICENSE'
+  #
+  # push:
+  #   branches:
+  #   - master
+  #   paths-ignore: 
+  #     - 'README.md'
+  #     - 'LICENSE'
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
