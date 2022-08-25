@@ -1,9 +1,7 @@
 # 手工定义的 Proxy 列表
 
 theinitium.com
-
 youtu.be
-
 netflix.com
 
 #161 可能以后会和GFWList重复
