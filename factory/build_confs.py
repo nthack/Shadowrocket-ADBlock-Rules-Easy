@@ -107,8 +107,8 @@ gfwlistlength = PropFileRW.readProp('gfwlistlength')
 timecode = time.strftime('%Y.%m.%d %H:%M:%S')
 timecode = urllib.parse.quote(timecode)
 update_badge="![](https://img.shields.io/badge/规则更新日期-" + timecode + "-blue?style=for-the-badge&logo=AdGuard)"
-GFWlistBadge="![](https://img.shields.io/badge/GFW规则数-" + gfwlistlength + "-critical?style=for-the-badge&logo=AdGuard)"
-adBlockBadge="![](https://img.shields.io/badge/AdBlock规则数-" + adblocklistlength + "-critical?style=for-the-badge&logo=AdGuard)"
+GFWlistBadge="![](https://img.shields.io/badge/GFW规则数-" + gfwlistlength + "-critical?style=for-the-badge&logo=SpringSecurity)"
+adBlockBadge="![](https://img.shields.io/badge/AdBlock规则数-" + adblocklistlength + "-blueviolet?style=for-the-badge&logo=AdBlock)"
 
 
 # Data Declare
