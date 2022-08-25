@@ -2,9 +2,9 @@
 
 ### 项目概览
 
-> 项目中所有的列表每天定时更新：
+> 项目中所有的规则每天定时更新：
 
-![](https://img.shields.io/badge/列表更新日期-2022.08.26%2000%3A35%3A22-brightgreen?style=for-the-badge&logo=AdGuard)
+![](https://img.shields.io/badge/规则更新日期-2022.08.26%2004%3A02%3A12-brightgreen?style=for-the-badge&logo=AdGuard)
 
 
 
