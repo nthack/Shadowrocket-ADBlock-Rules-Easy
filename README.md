@@ -1,5 +1,16 @@
 ## 最完善的 iOS 翻墙规则
 
+### 项目概览
+
+> 项目每天定时更新，目前最近更新日期：
+
+https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E6%97%A5%E6%9C%9F-2022.08.25%2014%3A40%3A43-brightgreen?style=for-the-badge&logo=AdGuard
+
+
+
+
+
+
 
 ### 一、前言
 由于原作者[h2y](https://github.com/h2y/Shadowrocket-ADBlock-Rules)暂停维护[原项目](https://github.com/h2y/Shadowrocket-ADBlock-Rules)，本项目对原项目进行部分修改，包括文件夹结构、README内容、删除不能使用的规则、修改生成规则等等。
@@ -55,3 +66,4 @@
 * beautifulsoup4
 * requests
 * lxml
+
