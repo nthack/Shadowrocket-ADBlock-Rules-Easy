@@ -81,9 +81,9 @@ for conf_name in confs_names:
 
 
     for mark in marks:
-        print('包含内容：', mark)
+        print('包含列表：', mark)
         template = template.replace('{{'+mark+'}}', values[mark])
 
     file_output.write(template)
 
-    print('ShadowRocket列表：', conf_name,' 构建完成\n')
+    print('ShadowRocket列表：', conf_name,' 构建完成\n\n')
