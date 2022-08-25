@@ -4,7 +4,7 @@
 
 > 项目中所有的列表每天定时更新：
 
-![](https://img.shields.io/badge/列表更新日期-2022.08.25%2023%3A59%3A06-brightgreen?style=for-the-badge&logo=AdGuard)
+![](https://img.shields.io/badge/列表更新日期-2022.08.26%2000%3A13%3A24-brightgreen?style=for-the-badge&logo=AdGuard)
 
 
 
