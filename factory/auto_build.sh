@@ -1,7 +1,5 @@
 #!/bin/bash
 
-build_path=./factory
-cd $path
 
 ## 构建一系列的规则列表
 python3 ad.py
