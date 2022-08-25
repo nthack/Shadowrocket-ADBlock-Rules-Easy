@@ -4,7 +4,7 @@
 
 > 项目每天定时更新，目前最近更新日期：
 
-![](https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E6%97%A5%E6%9C%9F-2022.08.25%2014%3A45%3A13-brightgreen?style=for-the-badge&logo=AdGuard)
+![](https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E6%97%A5%E6%9C%9F-2022.08.25%2015%3A09%3A56-brightgreen?style=for-the-badge&logo=AdGuard)
 
 
 
