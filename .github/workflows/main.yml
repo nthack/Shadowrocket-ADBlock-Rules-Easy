@@ -22,8 +22,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+
+      - uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "Asia/Hong_Kong"
 
       - name: Install requirements
         run: pip3 install -r factory/requirements.txt
