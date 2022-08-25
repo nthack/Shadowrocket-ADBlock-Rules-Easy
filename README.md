@@ -28,16 +28,24 @@
 </table>
 
 
+<br><br>
+
 #### 2.2 关于自定义列表：
 
 2.2.1 自定义列表文件夹路径：
 
 > [factory/manual/](https://github.com/nthack/Shadowrocket-ADBlock-Rules-Easy/tree/master/factory/manual)
 
+<br>
+
 2.2.2 自定义文件：
+
 	1. 自定义走代理的列表：[manual_proxy](https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_proxy.txt)
+	
 	2. 自定义走直连的列表：[manual_direct](https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_direct.txt)
+	
 	3. 自定义广告拦截列表：[manual_reject](https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_reject.txt)
+	
 	4. 自定义gfwlist列表（功能与`manual_proxy`一样）：[manual_gfwlist](https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_gfwlist.txt)
 
 ------------------------------------------------------
