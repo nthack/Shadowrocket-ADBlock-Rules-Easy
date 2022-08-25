@@ -3,6 +3,7 @@
 import re
 import time
 import urllib.parse
+import PropFileRW
 
 
 # 在 template/ 和 ../ 下的文件名称
@@ -91,21 +92,31 @@ for conf_name in confs_names:
 
 
 
+# 自动更新README.md
 # Auto Update README.md when executing this file
 readme_file_template = open('template/README_template.txt', 'r', encoding='utf-8')
 readme_template = readme_file_template.read()
-
 readme_marks = re.findall(r'{{(.+)}}', readme_template)
+
+# 读取repo_status.prop文件
+adblocklistlength = PropFileRW.readProp('adblocklistlength')
+gfwlistlength = PropFileRW.readProp('gfwlistlength')
+
 
 # Silly String format
 timecode = time.strftime('%Y.%m.%d %H:%M:%S')
 timecode = urllib.parse.quote(timecode)
-update_badge="![](https://img.shields.io/badge/规则更新日期-" + timecode + "-brightgreen?style=for-the-badge&logo=AdGuard)"
+update_badge="![](https://img.shields.io/badge/规则更新日期-" + timecode + "-blue?style=for-the-badge&logo=AdGuard)"
+GFWlistBadge="![](https://img.shields.io/badge/GFW规则数-" + gfwlistlength + "-critical?style=for-the-badge&logo=AdGuard)"
+adBlockBadge="![](https://img.shields.io/badge/AdBlock规则数-" + adblocklistlength + "-critical?style=for-the-badge&logo=AdGuard)"
 
 
 # Data Declare
 readme_data = {}
 readme_data['updateTimeBadge'] = update_badge
+readme_data['GFWlistBadge'] = GFWlistBadge
+readme_data['adBlockBadge'] = adBlockBadge
+
 
 
 for mark in readme_marks:

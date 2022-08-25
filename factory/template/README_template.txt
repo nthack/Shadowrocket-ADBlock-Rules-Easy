@@ -6,11 +6,15 @@
 
 {{updateTimeBadge}}
 
+{{GFWlistBadge}}
+
+{{adBlockBadge}}
 
 
 
 
-
+<br>
+<br>
 
 ### 一、前言
 由于原作者[h2y](https://github.com/h2y/Shadowrocket-ADBlock-Rules)暂停维护[原项目](https://github.com/h2y/Shadowrocket-ADBlock-Rules)，本项目对原项目进行部分修改，包括文件夹结构、README内容、删除不能使用的规则、修改生成规则等等。
