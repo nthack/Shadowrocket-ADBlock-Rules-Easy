@@ -87,3 +87,33 @@ for conf_name in confs_names:
     file_output.write(template)
 
     print('ShadowRocket列表：', conf_name,' 构建完成\n\n')
+
+
+
+# Auto Update README.md when executing this file
+readme_file_template = open('template/README_template.txt', 'r', encoding='utf-8')
+readme_template = readme_file_template.read()
+
+readme_marks = re.findall(r'{{(.+)}}', readme_template)
+
+# Silly String format
+dateForBadge=time.strftime('%Y.%m.%d')
+hourForBadge=time.strftime('%H')
+minuteForBadge=time.strftime('%M')
+secondForBadge=time.strftime('%S')
+
+update_badge="https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E6%97%A5%E6%9C%9F-"+dateForBadge+"%20"+hourForBadge+"%3A"+minuteForBadge+"%3A"+secondForBadge+"-brightgreen?style=for-the-badge&logo=AdGuard"
+
+
+# Data Declare
+readme_data = {}
+readme_data['updateTimeBadge'] = update_badge
+
+
+for mark in readme_marks:
+    print('替换README数据', mark)
+    readme_template = readme_template.replace('{{'+mark+'}}', readme_data[mark])
+
+
+readme_file_output = open('../README.md', 'w', encoding='utf-8')
+readme_file_output.write(readme_template)
