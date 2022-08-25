@@ -9,6 +9,6 @@ python3 build_confs.py
 
 
 cd ..
-git add .
-git commit -m 'Daily Build' -m '更新GFWList及所有规则'
-git push
+# git add .
+# git commit -m 'Daily Build' -m '更新GFWList及所有规则'
+# git push
