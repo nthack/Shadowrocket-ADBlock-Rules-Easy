@@ -2,6 +2,7 @@
 
 import re
 import time
+import urllib.parse
 
 
 # 在 template/ 和 ../ 下的文件名称
@@ -97,12 +98,9 @@ readme_template = readme_file_template.read()
 readme_marks = re.findall(r'{{(.+)}}', readme_template)
 
 # Silly String format
-dateForBadge=time.strftime('%Y.%m.%d')
-hourForBadge=time.strftime('%H')
-minuteForBadge=time.strftime('%M')
-secondForBadge=time.strftime('%S')
-
-update_badge="![](https://img.shields.io/badge/列表更新日期-"+dateForBadge+"%20"+hourForBadge+"%3A"+minuteForBadge+"%3A"+secondForBadge+"-brightgreen?style=for-the-badge&logo=AdGuard)"
+timecode = time.strftime('%Y.%m.%d %H:%M:%S')
+timecode = urllib.parse.quote(timecode)
+update_badge="![](https://img.shields.io/badge/规则更新日期-" + timecode + "-brightgreen?style=for-the-badge&logo=AdGuard)"
 
 
 # Data Declare
