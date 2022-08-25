@@ -102,7 +102,7 @@ hourForBadge=time.strftime('%H')
 minuteForBadge=time.strftime('%M')
 secondForBadge=time.strftime('%S')
 
-update_badge="![](https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E6%97%A5%E6%9C%9F-"+dateForBadge+"%20"+hourForBadge+"%3A"+minuteForBadge+"%3A"+secondForBadge+"-brightgreen?style=for-the-badge&logo=AdGuard)"
+update_badge="![](https://img.shields.io/badge/列表更新日期-"+dateForBadge+"%20"+hourForBadge+"%3A"+minuteForBadge+"%3A"+secondForBadge+"-brightgreen?style=for-the-badge&logo=AdGuard)"
 
 
 # Data Declare
