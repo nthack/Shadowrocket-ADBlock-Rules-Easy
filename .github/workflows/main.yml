@@ -5,8 +5,8 @@ name: Auto-Update
 # Controls when the workflow will run
 on:
   schedule:
-    # 每日8时开始
-    - cron:  '0 */8 * * *'
+    # 每8小时更新一次
+    - cron:  '*/5 * * * *'
   
   
   push:
