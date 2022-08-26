@@ -1,10 +1,12 @@
+![](https://nthack.github.io/nthack/assets/img/Shadowrocket_banner.jpg)
+
 ## 最完善的 iOS 翻墙规则
 
 ### 项目概览
 
 > 项目中所有的规则每天定时更新：
 
-![](https://img.shields.io/badge/规则更新时间-2022.08.27%2002%3A04%3A54-blue?style=for-the-badge&logo=AdGuard)
+![](https://img.shields.io/badge/规则更新时间-2022.08.27%2002%3A25%3A11-blue?style=for-the-badge&logo=AdGuard)
 
 ![](https://img.shields.io/badge/GFW规则数-5907-critical?style=for-the-badge&logo=SpringSecurity)
 
