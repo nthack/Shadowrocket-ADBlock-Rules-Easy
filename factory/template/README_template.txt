@@ -1,3 +1,5 @@
+![](https://nthack.github.io/nthack/assets/img/Shadowrocket_banner.jpg)
+
 ## 最完善的 iOS 翻墙规则
 
 ### 项目概览
