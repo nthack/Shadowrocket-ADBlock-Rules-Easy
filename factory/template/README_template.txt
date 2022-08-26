@@ -14,9 +14,8 @@
 
 
 <br>
-<br>
 
-![](https://nthack.github.io/nthack/assets/img/Shadowrocket_banner.jpg)
+![](https://nthack.github.io/nthack/assets/img/Shadowrocket_banner_resize.jpg)
 
 
 <br>
