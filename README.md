@@ -4,7 +4,7 @@
 
 > 项目中所有的规则每天定时更新：
 
-![](https://img.shields.io/badge/规则更新时间-2022.08.28%2002%3A21%3A30-blue?style=for-the-badge&logo=AdGuard)
+![](https://img.shields.io/badge/规则更新时间-2022.08.28%2002%3A23%3A04-blue?style=for-the-badge&logo=AdGuard)
 
 ![](https://img.shields.io/badge/GFW规则数-5907-critical?style=for-the-badge&logo=SpringSecurity)
 
@@ -18,6 +18,7 @@
 ![](https://nthack.github.io/nthack/assets/img/Shadowrocket_banner_resize.jpg)
 
 <br>
+Repository Page Views Counter
 
 ![](https://komarev.com/ghpvc/?username=nthack-shadowrocket-rules&style=for-the-badge&color=dc143c&label=Repository+Views)
 
