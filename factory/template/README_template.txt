@@ -17,6 +17,9 @@
 
 ![](https://nthack.github.io/nthack/assets/img/Shadowrocket_banner_resize.jpg)
 
+<br>
+
+![](https://komarev.com/ghpvc/?username=nthack-shadowrocket-rules&style=for-the-badge&color=dc143c&label=Repository+Views)
 
 <br>
 <br>
