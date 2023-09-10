@@ -4,7 +4,7 @@
 
 > 项目中所有的规则每天定时更新：
 
-![](https://img.shields.io/badge/规则更新时间-2023.09.10%2009%3A07%3A46-blue?style=for-the-badge&logo=AdGuard)
+![](https://img.shields.io/badge/规则更新时间-2023.09.10%2016%3A17%3A05-blue?style=for-the-badge&logo=AdGuard)
 
 ![](https://img.shields.io/badge/GFW规则数-5954-critical?style=for-the-badge&logo=SpringSecurity)
 
