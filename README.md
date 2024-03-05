@@ -4,11 +4,11 @@
 
 > 项目中所有的规则每天定时更新：
 
-![](https://img.shields.io/badge/规则更新时间-2024.03.05%2009%3A04%3A17-blue?style=for-the-badge&logo=AdGuard)
+![](https://img.shields.io/badge/规则更新时间-2024.03.05%2016%3A18%3A57-blue?style=for-the-badge&logo=AdGuard)
 
 ![](https://img.shields.io/badge/GFW规则数-5973-critical?style=for-the-badge&logo=SpringSecurity)
 
-![](https://img.shields.io/badge/AdBlock规则数-42636-blueviolet?style=for-the-badge&logo=AdBlock)
+![](https://img.shields.io/badge/AdBlock规则数-41973-blueviolet?style=for-the-badge&logo=AdBlock)
 
 
 
